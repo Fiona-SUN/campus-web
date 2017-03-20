@@ -128,31 +128,31 @@
                     {
                         title:'师大概况',
                         desc:'师大是常为新的，\n改进的运动的先锋，\n 要使中国向着好的，\n往上的道路走。',
-                        img:'dist/img/campus.jpg',
+                        img:'./dist/img/campus.jpg',
                         secTitle:['师大简介','组织机构','现任领导','历任领导','历史名人','绿色风景']
                     },
                     {
                         title:'招生就业',
                         desc:'校园风景美不胜收,\n恰似你将要留在这里的青春年华。\n\n福建师范大学欢迎你！',
-                        img:'dist/img/campus.jpg',
+                        img:'./dist/img/campus.jpg',
                         secTitle:['本科生','研究生','留学生','继续教育','网路教育','就业指导中心']
                     },
                     {
                         title:'教育教学',
                         desc:'思想自由、兼容并包。\n\n教育应指导社会，而非追逐社会！',
-                        img:'dist/img/campus.jpg',
+                        img:'./dist/img/campus.jpg',
                         secTitle:['师资队伍','社会科学研究','研究生教育','精品课程','课程平台','教学系统']
                     },
                     {
                         title:'科学研究',
                         desc:'博学之，审问之，\n\n慎思之，明辨之，笃行之。',
-                        img:'dist/img/campus.jpg',
+                        img:'./dist/img/campus.jpg',
                         secTitle:['科学技术研究','本科生教育','师大学报—自然版','师大学报—哲学版','科研创新平台','人文社科研究基地']
                     },
                     {
                         title:'校园生活',
                         desc:'秋冬春夏，\n伴随着四时的运行，\n青春和师大融为一体，\n师大成为永恒。\n',
-                        img:'dist/img/campus.jpg',
+                        img:'./dist/img/campus.jpg',
                         secTitle:['师大快讯','动态信息','媒体师大','师大校报','广播电台','学生电视台']
                     }
                 ]

@@ -26,42 +26,42 @@
                 links:[
                     {
                         title:'信息公开',
-                        img:'dist/img/link-info.jpg',
+                        img:'./dist/img/link-info.jpg',
                         className:'glyphicon glyphicon-user'
                     },
                     {
                         title:'图书馆',
-                        img:'dist/img/link-library.jpg',
+                        img:'./dist/img/link-library.jpg',
                         className:'glyphicon glyphicon-th-large'
                     },
                     {
                         title:'校园地图',
-                        img:'dist/img/link-campus.jpg',
+                        img:'./dist/img/link-campus.jpg',
                         className:'glyphicon glyphicon-asterisk'
                     },
                     {
                         title:'BBS',
-                        img:'dist/img/link-web.jpg',
+                        img:'./dist/img/link-web.jpg',
                         className:'glyphicon glyphicon-tree-deciduous'
                     },
                     {
                         title:'校内门户',
-                        img:'dist/img/link-net.jpg',
+                        img:'./dist/img/link-net.jpg',
                         className:'glyphicon glyphicon-home'
                     },
                     {
                         title:'领导信箱',
-                        img:'dist/img/link-email.jpg',
+                        img:'./dist/img/link-email.jpg',
                         className:'glyphicon glyphicon-envelope'
                     },
                     {
                         title:'网络服务',
-                        img:'dist/img/link-web.jpg',
+                        img:'./dist/img/link-web.jpg',
                         className:'glyphicon glyphicon-globe'
                     },
                     {
                         title:'相关友链',
-                        img:'dist/img/link-relative.jpg',
+                        img:'./dist/img/link-relative.jpg',
                         className:'glyphicon glyphicon-link'
                     }
                 ]

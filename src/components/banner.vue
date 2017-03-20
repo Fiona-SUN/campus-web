@@ -36,15 +36,15 @@
             return{
                 banImgs:[
                     {
-                        img:'/dist/img/banner-01.jpg',
+                        img:'./dist/img/banner-01.jpg',
                         desc:'知明行笃，立诚致广'
                     },
                     {
-                        img:'/dist/img/banner-02.jpg',
+                        img:'./dist/img/banner-02.jpg',
                         desc:'知明行笃，立诚致广'
                     },
                     {
-                        img:'/dist/img/banner-03.jpg',
+                        img:'./dist/img/banner-03.jpg',
                         desc:'知明行笃，立诚致广'
                     }
                 ]

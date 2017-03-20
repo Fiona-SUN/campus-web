@@ -106,7 +106,6 @@
     import banner from '../components/banner.vue';
     import linkPart from '../components/link.vue';
     import footerPart from '../components/footer.vue';
-    import Pagejs from '../public/js/script';
 
     export default{
         data(){
@@ -114,22 +113,22 @@
                 newsPart:[
                     {
                         title:'李岚清同志赠送我校校训篆刻印章',
-                        img:'/dist/img/news-01.jpg',
+                        img:'./dist/img/news-01.jpg',
                         date:'2017-03-19'
                     },
                     {
                         title:'我校举行2016年度“谢投八奖学金”颁发仪式',
-                        img:'/dist/img/news-02.jpg',
+                        img:'./dist/img/news-02.jpg',
                         date:'2017-03-17'
                     },
                     {
                         title:'哈佛大学杰弗里・琼斯教授应邀来校作学术报告 ',
-                        img:'/dist/img/news-03.jpg',
+                        img:'./dist/img/news-03.jpg',
                         date:'2017-03-17'
                     },
                     {
                         title:'省委教育工委来校检查2016年度全面从严治党主体责任落实情况',
-                        img:'/dist/img/news-04.jpg',
+                        img:'./dist/img/news-04.jpg',
                         date:'2017-03-14'
                     }
                 ],
