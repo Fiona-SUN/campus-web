@@ -67,6 +67,8 @@ wap端：
 
 ![campus-web-xs](https://Fiona-SUN.github.io/photos/campus-web-xs.png)
 
+ps:截图工具导致wap端图片存在问题
+
 > author : fiona
 >
 > 2017/3/10
