@@ -57,7 +57,11 @@ webpack配置文件
         
         |———index.vue  主页视图
 
-##3.项目预览
+##3.项目访问
+
+[campus-web](https://fiona-sun.github.io/campus-web/index.html)
+
+##4.项目预览
 
 pc端：
 
