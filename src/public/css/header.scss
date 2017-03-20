@@ -1,0 +1,85 @@
+.hd{
+  margin-bottom: 0;
+  li{ float: left;
+    &.spcial-li { padding: 0;  }
+  }
+  .hd-top{  background: $color-blackRed;  color: $color-midWhite;
+    .hd-top-xs{  width: 100%;  height: 4px;  background: $color-blackRed;  }
+    ul a{  display: block;  padding: 0 5px;  font-size: 14px;  line-height: 45px;  color: $color-midWhite;
+      &:hover{  color:$color-white;  }
+    }
+  }
+  .search-box{  box-sizing: content-box;  -moz-box-sizing: content-box;  -webkit-box-sizing: content-box;  position: relative;  width: 180px;  height: 32px;  padding: 5px 0 5px 20px;  }
+  .search-part{  width: 100%;  height: 100%;  border:none;  border-radius: 4px;  padding:0 45px 0 10px;  background: $color-white;  outline: none;  color:$color-black;  font-size: 16px;  vertical-align: middle;  zoom: 1;  }
+  .search-btn{  position: absolute;  right: 0;  top:5px;  width: 40px;  height:32px;  background: $color-white;  border-radius: 4px;  color:$color-blackRed !important;  text-align: center;  line-height: 35px !important;  }
+  .search-btn:hover{  color:red !important;  }
+
+  .logo-wrapper{  margin-top: 20px;  max-width: 170px;  }
+  .hd-center .container{  position: relative;  }
+  .navigator-wrapper{  margin-top: 30px;  }
+  .navigator-wrapper-xs{  background: none;  border: none; margin-bottom: 0; }
+  .nav-item{  position: static;
+    .caret{  margin-left: -4px;  }
+  }
+  .nav-title{  position: relative;  padding:0 10px 12px;  color:$color-lightRed;  font-size:14px;  font-weight: bold;  border-bottom: 4px solid transparent;  }
+  .nav-title:before {  content: "";  position: absolute;  left: 0;  right:0;  bottom: 0;  width: 0;  height: 4px;  margin: auto;  transition: width 0.45s;  background: $color-lightRed;  opacity: 0;  pointer-events: none;  }
+  .nav-item:hover{
+    .nav-title:before{  width: 100%;  opacity: 1;  }
+    .nav-title{  color:$color-oraganRed;  }
+    .nav-content{  display: block;  }
+  }
+  .nav-content{  position: absolute;  left: 0;  right:0;  z-index: 500; width: 100%;  margin: 10px auto 0;  padding:20px;  border: 1px solid #ddd;  box-shadow: 0 6px 12px rgba(0,0,0,0.175);  -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);  background: #fff;  font-size: 12px;  color:$color-reallyRed;  display: none;
+    li{  clear:both;  }
+    .description{  height: 100%;  min-height: 135px;  border-right: 1px solid #ddd;  white-space: pre;  text-align: center;  line-height: 1.5;  }
+    .nav-second-title{  font-weight:bold;
+      li{  padding:3px 0;  }
+      a{  color:$color-reallyRed !important;  }
+      a:hover{  color:$color-oraganRed !important;  }
+    }
+  }
+
+  .hd-xs {
+    .logo-wrapper{  margin-left: 20px;  }
+    .navbar-toggle{  margin-top:35px;  }
+    .navbar-toggle:hover,
+    .navbar-toggle:focus{  background-color:$color-reallyRed;  }
+    .navbar-toggle:hover .icon-bar,
+    .navbar-toggle:focus .icon-bar {  background-color: $color-white;  }
+    .collapse a:hover{  color:#fff;  }
+  }
+  .nav-menu-box-xs{  padding:10px 0 30px;  background:  #8f000b;
+    a{  border-bottom: 1px solid #700005;  height:35px;  line-height: 35px;  color:$color-midWhite;  font-size:16px;  font-weight:bold;  }
+    a.special-one{  border-bottom: none;  }
+  }
+
+  .search-box-xs{  height:35px;  line-height: 35px;
+    .search-part{  height: auto;  }
+    .search-btn{  top: 2px;  right:15px;  }
+  }
+  .nav-top-xs a{  clear: both;  display: block;  height:30px; border-bottom: 0; line-height: 35px;  color:$color-midWhite;  font-size:14px;  }
+}
+
+
+@media screen and (max-width: 1200px){
+  .hd{
+    .container {  width: 100%;  }
+  }
+}
+@media screen and (min-width: 768px){
+  .hd{
+     margin-bottom: 20px;
+    .logo-wrapper{  max-width: 200px;  }
+    .nav-title{  font-size:18px;  }
+    .navigator-wrapper{  margin-top: 40px;  }
+    .nav-content{  width: 95%;  font-size:14px;  }
+    .nav-content .nav-second-title li{  padding:5px 0;  }
+  }
+}
+@media screen and (min-width: 1200px){
+  .hd{
+    .logo-wrapper{  max-width: 280px;  }
+    .nav-title{  font-size:22px;  }
+    .navigator-wrapper{  margin-top: 50px;  }
+    .nav-content{  font-size: 14px;  }
+  }
+}

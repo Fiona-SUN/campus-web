@@ -1,0 +1,114 @@
+.main-part{
+  &{margin-top: pxToRem(40px);}
+
+  // 大标题&更多
+  .title{ float: left; color:$color-title; font-size:pxToRem(26px); line-height: 1.7; font-weight: bold; }
+  .more{ float: left; margin:pxToRem(10px) 0 0 pxToRem(10px); padding-left: pxToRem(10px);  border-left: 1px solid #e0ded9; font-size:pxToRem(12px); color:#3277ae;
+    &:hover{ text-decoration: underline; }
+  }
+
+  // 师大要闻&媒体师大
+  .news-part{
+    &{ margin-bottom: pxToRem(50px); }
+    .news-wrapper{ margin-bottom: pxToRem(20px); }
+    .news-txt-title{ margin-bottom: pxToRem(3px); color:$color-black; font-size:pxToRem(18px); font-weight: bold; }
+    .news-date{ color:$color-font-date; }
+    .content-part{  margin-top: pxToRem(15px);
+      .thumbnail{  margin-bottom: 0; padding:0; border:none;
+        .img-wrapper{ border-bottom: 8px solid #c4820e; }
+      }
+      .caption{ padding: pxToRem(9px) 0; }
+    }
+    .news-content{
+      a:hover{
+        .img-wrapper{ opacity: 0.75; }
+        .news-txt-title{ color: #be0f34; }
+      }
+    }
+    .media-content{
+      &{ margin-bottom: pxToRem(40px); }
+      &:last-child{margin-bottom: 0;}
+      .row{
+        &{ margin-left: 0; }
+        .media-date-box{
+          &{ margin-left: -100%; padding:0; color:#fff; }
+          .media-date-wrapper{
+            &{ width: 60px;  height: 60px; background: $color-text-hover; text-align: center; }
+            .media-date-day{  font-size: pxToRem(24px);  line-height: 1;  padding: 8px 0 2px 0;  zoom: 1;  }
+            .media-date-month{ font-size: pxToRem(12px); }
+          }
+        }
+        .media-content-box{
+          &{ width: 100%; }
+         a{ margin:0 10px 0 75px ; display: block;}
+        }
+        .media-content-title{  color:$color-black;  font-weight: bold;  font-size: pxToRem(18px);  }
+        .media-owner{ margin-top: pxToRem(8px); color:$color-font-date; font-size: pxToRem(14px); }
+        a:hover{
+          .media-content-title{ color: $color-text-hover; }
+        }
+      }
+    }
+  }
+
+  // 通知公告&招标信息
+  .info-part{
+    &{ padding: pxToRem(40px) 0;  background-color: #c3d7a4;  }
+    .title:hover{ color:$color-text-hover; }
+    .info-wrapper{
+      .info-header{ border-bottom: 4px solid #a51c30; margin-bottom: pxToRem(20px); }
+      .info-content{
+        &{ width: 100%; margin-bottom: pxToRem(35px); }
+        .content-wrapper{
+          &{float: left; width: 100%;}
+          a{ display: block; margin-left: pxToRem(105px);
+            .content-title{ font-size:pxToRem(16px); font-weight: bold; color:$color-title; }
+            &:hover{
+              .content-title {color:$color-text-hover;}
+            }
+          }
+        }
+        .date-wrapper { position: relative; float: left; width: pxToRem(90px); margin-left: -100%; font-size:pxToRem(18px); color:$color-reallyRed;
+          &:after{ content: ""; position: absolute; right:0; top: 0; display: block; width: 1px; height: pxToRem(30px); background: #b5b5b5; }
+        }
+      }
+    }
+
+    .class-wrapper{
+      .class-content{
+        &{ width: 100%; margin:pxToRem(10px) 0 pxToRem(20px); }
+        .class-content-box{
+          &{ float: left; width: 100%; }
+          a{  display: block;  margin-left: 75px;
+            .class-content-title{ font-size:pxToRem(18px); font-weight: bold; color:$color-black; }
+            .class-owner{ margin-top: pxToRem(8px); color:$color-font-date; font-size: pxToRem(14px);  }
+            &:hover{
+              .class-content-title{color:$color-text-hover;}
+            }
+          }
+        }
+        .class-date-box{
+          &{ float: left; width: 55px; height: 58px; border-right: 1px solid #b5b5b5;  margin-left: -100%;  }
+          .class-date-day{ font-size: pxToRem(26px);  line-height: pxToRem(26px);  padding: 8px 0 2px 0;  zoom: 1;   }
+          .class-date-month{font-size: pxToRem(12px);}
+        }
+      }
+      .more-class{ position: relative; margin-top: pxToRem(30px);
+        a{ display: block; font-size:pxToRem(16px);  color: $color-font-date;  text-align: center;}
+        a:hover{text-decoration: underline;}
+        &:before{ content:""; position: absolute; top: pxToRem(-10px); left: 0; right: 0; margin: auto; display: block; width: pxToRem(150px); height: 1px; background: #b5b5b5; }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px){
+  .container {
+    width: 100%;
+  }
+}
+@media (max-width: 400px){
+  .news-content{
+    width: 100%;
+  }
+}

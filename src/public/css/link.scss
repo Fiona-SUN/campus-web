@@ -1,0 +1,69 @@
+.link-part{
+  margin-top: pxToRem(50px);
+  .link-wrapper{
+    &{ height: pxToRem(126px); margin-bottom: pxToRem(15px); }
+    .link-box{ position:relative; display: block; height: 100%; width: 80%; margin:0 auto;
+      .img-box{ width: 100%; height: 100%; border:4px solid #a51c30; overflow: hidden;}
+      .link-txt-wrapper{ position:absolute; z-index: 100; bottom:0; left: 0; width: 100%; height: 28px; line-height: 28px; color:#fff; text-align: center; font-size: pxToRem(16px);
+        span{ display: block; position:absolute; left: 10%; top:25%; width: 20px; height: 20px; color:#fff; font-size:16px; }
+
+        &:after{ content: ""; display: block; position:absolute; bottom:0; left: 0; width: 100%; height: 28px; z-index: -1; opacity: 0.6; }
+        &#link-txt-0:after{ background: #6f3740; }
+        &#link-txt-1:after{ background: #7b4366;; }
+        &#link-txt-2:after{ background: #876fa7; }
+        &#link-txt-3:after{ background: #47527f; }
+        &#link-txt-4:after{ background: #64a2af; }
+        &#link-txt-5:after{ background: #3a844f; }
+        &#link-txt-6:after{ background: #979d53; }
+        &#link-txt-7:after{ background: #ad9063; }
+      }
+    }
+  }
+}
+
+
+// 图片显示媒体查询
+@media screen and (max-width: 1115px){
+  .link-part {
+    .link-wrapper{
+      .link-box{width: 85%;}
+    }
+  }
+}
+@media screen and (max-width: 975px){
+  .link-part {
+    .link-wrapper{
+      .link-box{width: 90%;}
+    }
+  }
+}
+@media screen and (max-width: 870px){
+  .link-part {
+    .link-wrapper{
+      .link-box{width: 95%;}
+    }
+  }
+}
+
+// 模块变化，图片隐藏
+@media screen and (max-width: 768px){
+  .link-part{
+    .link-wrapper{
+      &{height: pxToRem(46px);}
+      .link-box{ width: 100%;
+        .link-txt-wrapper{height: 100%;display: flex; align-items: center; justify-content: center;
+          &:before{ top:0; bottom:0; margin: auto 0; }
+          &:after{ height: 100%; opacity: 1; }
+        }
+      }
+      &:hover .link-txt-wrapper:after{ opacity: 0.85; }
+    }
+  }
+}
+@media screen and (max-width: 380px){
+  .link-part{
+    .link-wrapper{
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,66 @@
+*{
+  margin:0;
+  padding:0;
+}
+ul{
+  list-style: none;
+  margin: 0;
+}
+a:hover{
+  text-decoration: none;
+}
+.img-box img{
+  width: 100%;
+}
+::selection{
+  background: $color-midRead;
+  color:$color-white;
+}
+
+// 媒体查询
+@media (max-width:320px) {
+  html { font-size: 10px !important; }
+}
+@media (min-width:321px) and (max-width:352px) {
+  html { font-size: 11px !important; }
+}
+@media (min-width:353px) and (max-width:384px) {
+  html { font-size: 12px !important; }
+  article.assess-doc { max-height: 35rem !important; }
+}
+@media (min-width:385px) and (max-width:416px) {
+  html { font-size: 13px !important; }
+  article.assess-doc { max-height: 35rem !important; }
+}
+@media (min-width:417px) and (max-width:448px) {
+  html { font-size: 14px !important; }
+}
+@media (min-width:449px) and (max-width:480px) {
+  html { font-size: 15px !important; }
+}
+@media (min-width:481px) {
+  html { font-size: 16px !important; }
+}
+
+// 计算rem函数
+$baseFontSize: 16px!default;
+@function pxToRem($px) {
+  @return $px / $baseFontSize * 1rem;
+}
+
+// backgroundsize 为百分百
+@mixin backgroundSize {
+  background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -webkit-background-size: 100% 100%;
+}
+
+//
+@mixin colorTransition{
+  -webkit-transition: color .2s ease-in-out;
+  -moz-transition: color .2s ease-in-out;
+  -ms-transition: color .2s ease-in-out;
+  -o-transition: color .2s ease-in-out;
+  transition: color .2s ease-in-out;
+}
