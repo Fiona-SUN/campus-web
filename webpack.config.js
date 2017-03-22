@@ -6,7 +6,7 @@ module.exports = {
   entry: './src/main.js',
   output: {
     path: path.resolve(__dirname, './dist'),
-    publicPath: './dist/',
+    publicPath: 'dist/',
     filename: 'build.js'
   },
   resolveLoader: {
@@ -46,7 +46,7 @@ module.exports = {
     colors:true,
     inline:true,
     hot:true,
-    port:9000
+    port:8080
   },
   devtool: '#eval-source-map'
 };

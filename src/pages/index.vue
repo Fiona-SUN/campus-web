@@ -12,7 +12,8 @@
                                 <div class="title">师大要闻</div>
                                 <a href="javascript:void(0);" class="more">所有新闻</a>
                             </div>
-                            <div class="col-sm-6 col-xs-6 news-content content-part" v-for="(news,index) in newsPart">
+                            <div class="row">
+                                <div class="col-sm-6 col-xs-6 news-content content-part" v-for="(news,index) in newsPart" v-if="index < 2">
                                 <a href="javascript:void(0);">
                                     <div class="thumbnail img-box">
                                         <img class="img-wrapper" v-if="news.img" :src="news.img" alt>
@@ -22,6 +23,19 @@
                                         </div>
                                     </div>
                                 </a>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-sm-6 col-xs-6 news-content content-part" v-for="(news,index) in newsPart" v-if="index >= 2">
+                                <a href="javascript:void(0);">
+                                    <div class="thumbnail img-box">
+                                        <img class="img-wrapper" v-if="news.img" :src="news.img" alt>
+                                        <div class="caption">
+                                            <div class="news-txt-title">{{news.title}}</div>
+                                            <div class="news-date">{{news.date}}</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
                             </div>
                         </div>
 
