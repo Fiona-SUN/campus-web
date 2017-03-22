@@ -60,7 +60,7 @@ webpack配置文件
 
 ##3.项目访问
 
-[campus-web](https://fiona-sun.github.io/campus-web/index.html)
+[campus-web](https://fiona-sun.github.io/campus-web)
 
 
 ##4.项目预览
